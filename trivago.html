@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trivago.in</title>
+  <link rel="icon" width="20px" href="logo.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e63946;
+}
+.logo span {
+  color: #0077b6;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+.right ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none; 
+}   
+.right ul li{
+    font-weight: 200;
+  font-size: 14px;
+  width: 110px;
+}   
+.right ul li i{
+
+  margin-right: 3px;    
+}   
+/* Main Section */
+.main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.main h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.main p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: auto;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.search-item input {
+  border: none;
+  outline: none;
+  flex: 1;
+}
+
+.search-btn {
+  background: #0077b6;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background: #005f8a;
+}
+
+/* Hotel Cards */
+.deals {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.deals h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #0077b6;
+  margin: 10px 0;
+}
+
+.check-btn {
+  display: inline-block;
+  background: #0077b6;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+    <!-- <ul>
+                <li> <i class="fa-regular fa-heart"></i>Favorites</li>
+                <li> <i class="fa-solid fa-globe"></i>EN-<i class="fa-solid fa-indian-rupee-sign"></i>
+                <li> <i class="fa-solid fa-circle-user"></i> Log in</li>
+                <li> <i class="fa-solid fa-bars"></i>Menu</li>
+            </ul> -->
+  <header>
+    <div class="logo"><img src="trivago.png" width="100" alt=""></div>
+    <!-- <nav>
+      <span>Favorites</span>
+      <span>EN - ₹</span>
+      <span>Log in</span>
+      <span>Menu</span>
+    </nav> -->
+    <div class="right">
+
+        <ul>
+              <li> <i class="fa-regular fa-heart"></i>Favorites</li>
+              <li> <i class="fa-solid fa-globe"></i>EN-<i class="fa-solid fa-indian-rupee-sign"></i>
+              <li> <i class="fa-solid fa-circle-user"></i> Log in</li>
+              <li> <i class="fa-solid fa-bars"></i>Menu</li>
+          </ul> 
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="main">
+    <h1 >Save up to 55% on your next hotel stay</h1>
+    <p>We compare hotel prices from over 100 sites</p>
+
+    <div class="search-bar">
+      <div class="search-item">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Where to?">
+      </div>
+      <div class="search-item">
+        <i class="fas fa-calendar"></i>
+        <input type="text" placeholder="Select dates">
+      </div>
+      <div class="search-item">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="2 Guests, 1 Room">
+      </div>
+      <button class="search-btn">Search</button>
+    </div>
+  </section>
+
+  <!-- Hotel Deals -->
+  <section class="deals">
+    <h2>Hot hotel deals right now</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/62495169.jpg?k=6db010be5372ca2475f430b2550494fb285943bb6c405f087b238bad020b96c9&o=&hp=1" alt="">
+        <div class="card-body">
+          <h3>Caravela Beach Resort</h3>
+          <p>Varca, India</p>
+          <p class="price">₹11,946 / night</p>
+          <a href="#" class="check-btn">Check deal</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src=https://medhufushiisland.com/wp-content/uploads/2018/12/BO_6900.jpg" alt="">
+        <div class="card-body">
+          <h3>Medhufushi Island Resort</h3>
+          <p>Maldives</p>
+          <p class="price">₹16,094 / night</p>
+          <a href="#" class="check-btn">Check deal</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_267,q_40,w_400/hotelier-images/48/10/b103bf848969d4b742dbceccf05b0f451f0cdccea257cf1d60c341868eb0.jpeg" alt="">
+        <div class="card-body">
+          <h3>Taj Mahal Tower Mumbai</h3>
+          <p>Mumbai, India</p>
+          <p class="price">₹16,311 / night</p>
+          <a href="#" class="check-btn">Check deal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

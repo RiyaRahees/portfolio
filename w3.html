@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3 school</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" >
+<style>
+  *{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    color: black;
+    
+}
+.nav{
+    height: 70px;
+    width: 100%;
+    background-color:  rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: fixed;
+
+    
+}
+.nav-left{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
+}
+.nav-left ul li{
+    list-style:none ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+    }
+ .nav-left ul{
+    display: flex;
+    gap:20px ;
+    padding-left: 30px;
+ }   
+.nav-right{
+    height: 100%;
+    width: 50%;
+    background-color:  rgb(255, 255, 255);
+  
+    
+}
+.nav img{
+    height: 50px;
+    padding: 10px;
+    display: flex;
+   
+}
+.nav-left ul li:hover{
+    background-color: #36AF57;
+    transition-duration: 0.9s;
+}
+.nav input{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    border-radius: 15px;
+    border-color: white;
+    border-style:groove;
+    border: 13;
+
+}
+.nav-right{
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.nav-right li{
+   list-style: none;
+   
+}
+a{
+    text-decoration: none;
+}
+/* .sign-in{
+    position: relative;
+   padding-left: 300px; 
+
+} */
+ .nav-right li:hover{
+       
+    padding: 8px;
+    /* height: fit-content; */
+    background-color: rgb(238, 238, 238);
+    transition-duration: 0.3s;
+
+    border-radius: 10px;
+   
+    
+ }
+ /* .sign-in:hover{
+    background-color: #36AF57;
+    transition: 4s;
+    padding:10px ;
+
+ } */
+.sub-nav{
+    
+    height: 36px;
+    width: 100%;
+    position: fixed;
+    margin-top: 70px;
+    background-color: #1e202d;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+  
+    /* justify-content: space-evenly; */
+    
+    
+    
+}
+.sub-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.sub-nav ul li{
+ display: flex;
+ padding: 10px;
+  color: white;  
+    
+}
+.sub-nav li:hover{
+    background-color: black;
+    /* border-radius: 6px; */
+}
+
+.content{
+    display: flex;
+    padding-top: 25%;
+    justify-content: center;
+    
+
+
+}
+.content h1{
+    color: azure;
+    font-size: 80px;
+}
+</style>
+</head>
+<body>
+     <div class="nav">
+        <img src="./W3Schools_logo.svg.png" alt="">
+        <div class="nav-left">
+         <ul>
+            <li><a href="http://">Tutorials</a> <i class="fa-solid fa-caret-down"></i></li>
+            <li><a href="http://">Exercises</a><i class="fa-solid fa-caret-down"></i></li>
+            <li><a href="http://">Certificates</a><i class="fa-solid fa-caret-down"></i></li>
+            <li><a href="http://">Services</a><i class="fa-solid fa-caret-down"></i></li>
+        </ul>
+      
+        
+
+
+        </div>
+          <input class="search" type="search"  placeholder="Search...." >
+        <div class="nav-right">
+          <!-- <div class="right-links"> -->
+            
+            <li><i class="fa-solid fa-circle-half-stroke"></i></li>
+          <li><i class="fa-solid fa-wand-magic-sparkles" style="color: #B197FC;"></i><a href="">Upgrade</a></li>
+          <li><i class="fa-solid fa-cart-shopping" style="color: #B197FC;"></i><a href="">Get Certified</a></li>
+          
+         <lis style=" padding: 10px; border-radius: 6px; background-color:#36AF57;"><i class="fa-solid fa-user"></i><a class="sign-in" href="">Sign In</a></li> 
+        <!-- </div> -->
+        </div>
+        
+     </div>
+
+     <div  class="sub-nav">
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>PYTHON</li>
+        <li>JAVA SCRIPT</li>
+        <li>MONGO DB</li>
+        <li>REACT</li>
+        <li>ANGULAR</li>
+        <li>.NET</li>
+        <li>EXPRESS</li>
+        <li>DATA SCIENCE</li>
+        <li>MY SQL</li>
+        <li>PHP</li>
+        <li>BOOSTRAP</li>
+        <li>D JANGO</li>
+        <li>CSS</li>
+        <!-- <li>DSA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>  -->
+      </ul>
+    </div>
+     <div class="content"  style="height: 1000px;width: 100%; color: aliceblue; background-color:#1e202d;">
+      <h1>Learn to Code</h1>
+      
+     </div>
+     
+</body>
+</html>
